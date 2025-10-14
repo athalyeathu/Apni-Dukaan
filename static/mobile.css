@@ -264,3 +264,45 @@ $color5: #7d89e7;
       font-size: 15px!important;
     }
   }
+
+  /* === Fix UI of cards on mobile category page (#269) === */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.2rem;
+  padding: 1rem;
+  justify-items: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 200px;
+  background: #fff;
+  border: 2px solid rgba(1, 52, 146, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* Mobile optimization */
+@media (max-width: 600px) {
+  .cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.8rem;
+  }
+
+  .card {
+    max-width: 160px;
+    border-radius: 10px;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+}
