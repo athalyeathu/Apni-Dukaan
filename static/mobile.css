@@ -306,3 +306,187 @@ $color5: #7d89e7;
     border-radius: 10px 10px 0 0;
   }
 }
+
+/* === Enhancement for Mobiles Section (Issue #21) === */
+
+body {
+  background: linear-gradient(180deg, #f8faff 0%, #ffffff 100%);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Updated deals section layout */
+.deals {
+  padding: 60px 20px;
+  background: #fefefe;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Card enhancement for mobile products */
+.inner > div {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  padding: 16px;
+  text-align: center;
+  max-width: 280px;
+}
+
+.inner > div:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.inner img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.mobile-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 12px 0 6px;
+  color: #013492;
+}
+
+.mobile-inner {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+.mobile-inner:last-of-type {
+  margin-bottom: 10px;
+}
+
+.buybutton {
+  background: #013492;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.buybutton:hover {
+  background: #0240b6;
+}
+
+/* Fix Add to Cart visibility */
+.add-to-cart {
+  background: #013492;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.add-to-cart:hover {
+  background: #0240b6;
+}
+
+/* If using an icon inside Add to Cart button */
+.add-to-cart i,
+.add-to-cart svg {
+  margin-right: 6px;
+  font-size: 1rem;
+}
+
+
+
+/* Mobile optimization for small screens */
+@media (max-width: 600px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .inner > div {
+    max-width: 100%;
+  }
+}
+
+/* === Fix Add to Cart & Buy Now Button Alignment === */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px; /* space between buttons */
+  margin-top: 12px;
+}
+
+.add-to-cart,
+.buybutton {
+  flex: 1 1 120px; /* equal width, responsive */
+  max-width: 130px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Add to Cart button */
+.add-to-cart {
+  background: transparent;
+  color: #013492;
+  border: 2px solid #013492;
+}
+
+.add-to-cart:hover {
+  background: #013492;
+  color: #fff;
+}
+
+/* Buy Now button */
+.buybutton {
+  background: #013492;
+  color: #fff;
+  border: 2px solid #013492;
+}
+
+.buybutton:hover {
+  background: #0240b6;
+  border-color: #0240b6;
+}
+
+/* Responsive layout on smaller screens */
+@media (max-width: 500px) {
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .add-to-cart,
+  .buybutton {
+    max-width: 100%;
+    height: 38px;
+  }
+}
+
+/* Fix unwanted blue rectangle beside Buy Now */
+.mobile-card a {
+  display: inline-block;
+  text-decoration: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
