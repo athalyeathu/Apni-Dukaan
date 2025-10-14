@@ -1,0 +1,58 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f7ff;
+  margin: 0;
+  padding: 0;
+}
+
+.page-title {
+  text-align: center;
+  color: #013492e7;
+  margin-top: 20px;
+}
+
+.clothes-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.clothes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.clothes-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 200px;
+  transition: transform 0.2s ease;
+}
+
+.clothes-card:hover {
+  transform: translateY(-5px);
+}
+
+.clothes-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #013492e7;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0b4ec7;
+}
+
