@@ -3,7 +3,8 @@
   <head>
     <title>Apni Dukaan</title>
     <meta charset="utf-8">
-        <meta name="vfewport" content="width=device-width initial-scale=1 shrink-to-fit-=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" type="text/css" href="./static/style.css">
         <link rel="stylesheet" href="./static/mobile.css">
         <link rel="icon" href="./Images/favicon.ico" type="image/x-icon">
@@ -17,65 +18,71 @@
   <a class="scrollToTop" href="#"></a>
   <!-- END SCROLL TOP BUTTON -->
   <section>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background: #2980b9;">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">
-              <img src="Images\Logo\ApniDukan.png" alt="logo" class="d-inline-block align-text-top navbar-logo navbar-logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-capitalize">
-                  <ul class="navbar-nav mr-auto mb-2 mb-lg-0 text-capitalize">
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
-                      </li>
-                      <li class="nav-item text-capitalize">
-                          <a class="nav-link" href="./offers.html">Offers</a>
-                      </li>
-                      <li class="nav-item text-capitalize">
-                          <a class="nav-link" href="./contactus.html">Contact us</a>
-                      </li>
-                      <li class="nav-item text-capitalize">
-                          <a class="nav-link" href="login.html">Login</a>
-                      </li>        
-                      <li class="nav-item text-capitalize">
-                          <a class="nav-link" href="./about.html">About us</a>
-                      </li>
-                      <li class="nav-item text-capitalize">
-                          <a class="nav-link" href="faq.html">FAQ</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Category
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="./mobile.html">Mobile</a></li>
-                              <li><a class="dropdown-item" href="./books.html">Books</a></li>
-                              <li><a class="dropdown-item" href="./">TV/Appliances</a></li>
-                              <li><a class="dropdown-item" href="./furniture.html">Furniture</a></li>
-                              <li><a class="dropdown-item" href="#">Baby/Kids</a></li>
-                              <li><a class="dropdown-item" href="./stationery.html">Stationery</a></li>
-                              <li>
-                                  <hr class="dropdown-divider">
-                              </li>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background: #2980b9;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="Images/Logo/ApniDukan.png" alt="logo" class="d-inline-block align-text-top navbar-logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-                              <li><a class="dropdown-item" href="./login.html">Login/Signup</a></li>
-                          </ul>
-                      </li>
-                      <li class="nav-item text-capitalize">
-                          <a class="nav-link" href="cart.html">My Cart</a>
-                      </li>
-                  </ul>
-                  <form class="d-flex">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-dark" type="submit">Search</button>
-                  </form>
-          </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-capitalize">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./offers.html">Offers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contactus.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./faq.html">FAQ</a>
+          </li>
+
+          <!-- ✅ Proper Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./mobile.html">Mobile</a></li>
+              <li><a class="dropdown-item" href="./books.html">Books</a></li>
+              <li><a class="dropdown-item" href="./tvAndAppliances.html">TV/Appliances</a></li>
+              <li><a class="dropdown-item" href="./furniture.html">Furniture</a></li>
+              <li><a class="dropdown-item" href="#">Baby/Kids</a></li>
+              <li><a class="dropdown-item" href="./stationery.html">Stationery</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="./login.html">Login/Signup</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./cart.html">My Cart</a>
+          </li>
+        </ul>
+
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
       </div>
+    </div>
   </nav>
 </section>
+
     <marquee class="moving-header">Welcome To <i>ApniDukaan</i>.com<sup>&reg;</sup></marquee>
     <div class="header-mob"><div><img src="Images\Logo\ApniDukan.png" class="logo"></div>
     <h1 class="online">Find Your Best Deal</h1></div>
@@ -87,7 +94,7 @@
       <li><a class="other-header" href="./furniture.html">Furniture</a></li>
       <li><a class="other-header" href="#">Baby/Kids</a></li>
       <li><a class="other-header" href="./stationery.html">Stationery</a></li>
-      <li>  <h2 class="mobile-header">Best Mobile Collection</h2></li>
+      
       </ul>
     </nav>
 <section class="deals">

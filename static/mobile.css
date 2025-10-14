@@ -490,3 +490,9 @@ body {
   margin: 0;
   border: none;
 }
+
+.navbar,
+.dropdown-menu {
+  position: relative;
+  z-index: 9999;
+}
