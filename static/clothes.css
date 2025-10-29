@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f5f7ff;
@@ -56,3 +57,237 @@ button:hover {
   background-color: #0b4ec7;
 }
 
+/* ------------------------------
+   Deals Section & Product Cards
+-------------------------------*/
+.deals {
+  padding: 60px 20px;
+  background: #fefefe;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.inner > div {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  padding: 16px;
+  text-align: center;
+  max-width: 280px;
+}
+
+.inner > div:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.inner img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.mobile-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 12px 0 6px;
+  color: #013492;
+}
+
+.mobile-detail {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+.mobile-price {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #013492;
+  margin-bottom: 10px;
+}
+
+/* ------------------------------
+   Button Styling (Inside Card)
+-------------------------------*/
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.button-container button {
+  flex: 1 1 120px;
+  max-width: 150px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+/* Primary (Add to Cart) */
+.button-container .add-to-cart {
+  background-color: #6c63ff;
+  color: white;
+}
+
+.button-container .add-to-cart:hover {
+  background-color: #574bfa;
+  transform: translateY(-2px);
+}
+
+/* Secondary (Buy Now) */
+.button-container .buy-now {
+  background-color: white;
+  color: #6c63ff;
+  border: 2px solid #6c63ff;
+}
+
+.button-container .buy-now:hover {
+  background-color: #6c63ff;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ------------------------------
+   Responsive Layout
+-------------------------------*/
+@media (max-width: 500px) {
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button-container button {
+    max-width: 100%;
+    height: 38px;
+  }
+}
+
+@media (max-width: 600px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .inner > div {
+    max-width: 100%;
+  }
+}
+
+/* ===============================
+   Final Product Card + Buttons
+=============================== */
+.mobile-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 128, 0.25);
+  padding: 16px;
+  text-align: center;
+  max-width: 280px;
+  height: auto;
+  overflow: hidden;
+}
+
+.mobile-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.mobile-card h3 {
+  color: #002366;
+  margin: 8px 0 4px;
+}
+
+.mobile-card p {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.mobile-card .mobile-price {
+  color: #002366;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Button container inside card */
+.mobile-card .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+/* Buttons */
+.mobile-card .add-to-cart,
+.mobile-card .buy-now {
+  flex: 1 1 45%;
+  max-width: 130px;
+  padding: 10px 0;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add to Cart */
+.mobile-card .add-to-cart {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+}
+.mobile-card .add-to-cart:hover {
+  background-color: #574bfa;
+  transform: translateY(-2px);
+}
+
+/* Buy Now */
+.mobile-card .buy-now {
+  background-color: white;
+  color: #6c63ff;
+  border: 2px solid #6c63ff;
+}
+.mobile-card .buy-now:hover {
+  background-color: #6c63ff;
+  color: white;
+  transform: translateY(-2px);
+}
+/* === FINAL POLISH: Remove white box around buttons === */
+.mobile-card .button-container {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  margin: 12px 0 0 0;
+  padding: 0;
+}
+
+.mobile-card .add-to-cart,
+.mobile-card .buy-now {
+  box-shadow: none;
+}

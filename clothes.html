@@ -13,91 +13,271 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://kit.fontawesome.com/60fedd8558.js" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
 
-  <!-- Navbar -->
+  <!-- SCROLL TOP BUTTON -->
+  <a class="scrollToTop" href="#"></a>
+  <!-- END SCROLL TOP BUTTON -->
   <section>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background: #2980b9;">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">
-          <img src="./Images/Logo/ApniDukan.png" alt="logo" width="45" height="35" class="d-inline-block align-text-top navbar-logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background: #2980b9;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./Images/Logo/ApniDukan.png" alt="logo" class="d-inline-block align-text-top navbar-logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-capitalize">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="./home.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="./offers.html">Offers</a></li>
-            <li class="nav-item"><a class="nav-link" href="./contactus.html">Contact us</a></li>
-            <li class="nav-item"><a class="nav-link" href="./login.html">Login</a></li>
-            <li class="nav-item"><a class="nav-link" href="./about.html">About us</a></li>
-            <li class="nav-item"><a class="nav-link" href="./faq.html">FAQ</a></li>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-capitalize">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./offers.html">Offers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contactus.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./faq.html">FAQ</a>
+          </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Category</a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="./mobile.html">Mobile</a></li>
-                <li><a class="dropdown-item" href="./books.html">Books</a></li>
-                <li><a class="dropdown-item" href="./tvAndAppliances.html">TV/Appliances</a></li>
-                <li><a class="dropdown-item" href="./furniture.html">Furniture</a></li>
-                <li><a class="dropdown-item" href="#">Baby/Kids</a></li>
-                <li><a class="dropdown-item" href="./stationery.html">Stationery</a></li>
-                <li><a class="dropdown-item" href="./clothes.html">Clothes</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="./login.html">Login/Signup</a></li>
-              </ul>
-            </li>
+          <!-- ✅ Proper Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./mobile.html">Mobile</a></li>
+              <li><a class="dropdown-item" href="./books.html">Books</a></li>
+              <li><a class="dropdown-item" href="./tvAndAppliances.html">TV/Appliances</a></li>
+              <li><a class="dropdown-item" href="./furniture.html">Furniture</a></li>
+              <li><a class="dropdown-item" href="#">Baby/Kids</a></li>
+              <li><a class="dropdown-item" href="./stationery.html">Stationery</a></li>
+              <li><a class="dropdown-item" href="./clothes.html">Clothes</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="./login.html">Login/Signup</a></li>
+            </ul>
+          </li>
 
-            <li class="nav-item"><a class="nav-link" href="./cart.html">My Cart</a></li>
-          </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="./cart.html">My Cart</a>
+          </li>
+        </ul>
 
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-dark" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-  </section>
-
-  <!-- Main Content -->
-  <section class="clothes-section">
-    <h2>Shop Our Latest Clothing</h2>
-    <div class="clothes-grid">
-      <div class="clothes-card">
-        <img src="./Images/clothes/shirt1.jpg" alt="Shirt">
-        <p>Casual Cotton Shirt</p>
-        <button>Add to Cart</button>
-      </div>
-
-      <div class="clothes-card">
-        <img src="./Images/clothes/jeans1.jpg" alt="Jeans">
-        <p>Blue Denim Jeans</p>
-        <button>Add to Cart</button>
-      </div>
-
-      <div class="clothes-card">
-        <img src="./Images/clothes/tshirt1.jpg" alt="T-shirt">
-        <p>Graphic T-Shirt</p>
-        <button>Add to Cart</button>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
       </div>
     </div>
-  </section>
+  </nav>
+</section>
+
+    <marquee class="moving-header">Welcome To <i>ApniDukaan</i>.com<sup>&reg;</sup></marquee>
+    <div class="header-mob"><div><img src="Images\Logo\ApniDukan.png" alt="logo" class="logo"></div>
+    <h1 class="online">Find Your Best Deal</h1></div>
+
+<section class="deals">
+  <div class="inner">
+    <div class="mobile-card" data-id="shirt1" data-name="Casual Cotton Shirt" data-price="999" data-image="./Images/clothes/shirt1.jpg">
+      <img src="./Images/clothes/shirt1.jpg" alt="Casual Cotton Shirt">
+      <h3 class="mobile-name">Casual Cotton Shirt</h3>
+      <p class="mobile-detail">Cotton Fabric • Comfort Fit</p>
+      <p class="mobile-price">₹999</p>
+      <div class="button-container">
+        <button class="add-to-cart">Add to Cart</button>
+        <a href="product.html" class="buy-now">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="mobile-card" data-id="jeans1" data-name="Blue Denim Jeans" data-price="1999" data-image="./Images/clothes/jeans1.jpg">
+      <img src="./Images/clothes/jeans1.jpg" alt="Blue Denim Jeans">
+      <h3 class="mobile-name">Blue Denim Jeans</h3>
+      <p class="mobile-detail">Denim Material • Classic Fit</p>
+      <p class="mobile-price">₹1,999</p>
+      <div class="button-container">
+        <button class="add-to-cart">Add to Cart</button>
+        <a href="product.html" class="buy-now">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="mobile-card" data-id="tshirt1" data-name="Graphic T-Shirt" data-price="799" data-image="./Images/clothes/tshirt1.jpg">
+      <img src="./Images/clothes/tshirt1.jpg" alt="Graphic T-Shirt">
+      <h3 class="mobile-name">Graphic T-Shirt</h3>
+      <p class="mobile-detail">Cotton Blend • Trendy Design</p>
+      <p class="mobile-price">₹799</p>
+      <div class="button-container">
+        <button class="add-to-cart">Add to Cart</button>
+        <a href="product.html" class="buy-now">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="mobile-card" data-id="jeans2" data-name="Skinny Jeans" data-price="2499" data-image="./mens-denim-skinny-jeans-500x500.webp">
+      <img src="./mens-denim-skinny-jeans-500x500.webp" alt="Skinny Jeans">
+      <h3 class="mobile-name">Skinny Jeans</h3>
+      <p class="mobile-detail">Slim Fit • Denim Fabric</p>
+      <p class="mobile-price">₹2,499</p>
+      <div class="button-container">
+        <button class="add-to-cart">Add to Cart</button>
+        <a href="product.html" class="buy-now">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="mobile-card" data-id="dress1" data-name="Summer Dress" data-price="1499" data-image="./5W5A8927.webp">
+      <img src="./5W5A8927.webp" alt="Summer Dress">
+      <h3 class="mobile-name">Summer Dress</h3>
+      <p class="mobile-detail">Light Fabric • Breezy Style</p>
+      <p class="mobile-price">₹1,499</p>
+      <div class="button-container">
+        <button class="add-to-cart">Add to Cart</button>
+        <a href="product.html" class="buy-now">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="mobile-card" data-id="jacket1" data-name="Leather Jacket" data-price="3999" data-image="./ai_creative_0000_Layer_6.jpg">
+      <img src="./ai_creative_0000_Layer_6.jpg" alt="Leather Jacket">
+      <h3 class="mobile-name">Leather Jacket</h3>
+      <p class="mobile-detail">Genuine Leather • Premium Finish</p>
+      <p class="mobile-price">₹3,999</p>
+      <div class="button-container">
+        <button class="add-to-cart">Add to Cart</button>
+        <a href="product.html" class="buy-now">Buy Now</a>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Footer -->
-  <footer class="text-center p-3 bg-light">
-    <p>© 2025 Apni Dukaan. All rights reserved.</p>
+  <footer class="bg-dark text-white pt-5 pb-4" style="font-size: 18px;">
+    <div class="container text-md-left">
+      <div class="row text-md-left">
+        <div class="col mt-3" style="color:#808080;">
+          <h5 class="text-uppercase mb-4 font-weight-bold md-sz">Get to know us</h5>
+          <p>
+            <a href="./about.html" class="text-white" style="text-decoration: none;">About us</a>
+          </p>
+          <p>
+            <a href="./career.html" class="text-white" style="text-decoration: none;">Careers</a>
+          </p>
+          <p>
+            <a href="" class="text-white" style="text-decoration: none;">Press releases</a>
+          </p>
+          <p>
+            <a href="./cares.html" class="text-white" style="text-decoration: none;">Apni Dukaan cares</a>
+          </p>
+          <p>
+            <a href="./Partner Stores.html" class="text-white" style="text-decoration: none;">Our Partners</a>
+          </p>
+        </div>
+        <div class="col mt-3"  style="color:#808080;">
+          <h5 class="text-uppercase mb-4 font-weight-bold md-sz">Let us help you</h5>
+            <p>
+              <a href="./paypolicy.html" class="text-white" style="text-decoration: none;">Payments</a>
+            </p>
+            <p>
+              <a href="./shippolicy.html" class="text-white" style="text-decoration: none;">Shipping</a>
+            </p>
+            <p>
+              <a href="" class="text-white" style="text-decoration: none;">Cancellation and Returns</a>
+            </p>
+            <p>
+              <a href="" class="text-white" style="text-decoration: none;">Report an issue</a>
+            </p>
+            <p>
+              <a href="./contactus.html" class="text-white" style="text-decoration: none;">Contact us</a>
+            </p>
+        </div>
+        <div class="col mt-3" style="color:#808080;">
+          <h5 class="text-uppercase mb-4 font-weight-bold md-sz">Policy</h5>
+            <p>
+              <a href="" class="text-white" style="text-decoration: none;">Return policy</a>
+            </p>
+            <p>
+              <a href="" class="text-white" style="text-decoration: none;">Time of use</a>
+            </p>
+            <p>
+              <a href="./privacy.html" class="text-white" style="text-decoration: none;">Privacy</a>
+            </p>
+        </div>
+        <div class="col mt-3" style="color:#808080;">
+          <h5 class="text-uppercase mb-4 font-weight-bold md-sz">Make money with us</h5>
+            <p>
+              <a href="" class="text-white" style="text-decoration: none;">Sell on Apni Dukaan</a>
+            </p>
+            <p>
+              <a href="" class="text-white" style="text-decoration: none;">Advertise your products</a>
+            </p>
+            <p>
+              <a href="./Partner Stores.html" class="text-white" style="text-decoration: none;">Become our partner</a>
+            </p>
+            <p>
+              <a href="" class="text-white" style="text-decoration: none;">Join our mission</a>
+            </p>
+        </div>
+        <div class="col mt-3" style="color:#808080;">
+          <div>
+            <h5 class="text-uppercase mb-4 font-weight-bold md-sz">Connect with us</h5>
+            <p>
+              <a href="https://www.facebook.com" class="text-white" style="text-decoration: none;">
+                <i class="fab fa-facebook-square"></i>
+                Facebook
+              </a>
+            </p>
+            <p>
+              <a href="https://twitter.com" class="text-white" style="text-decoration: none;">
+                <i class="fab fa-twitter-square"></i>
+                Twitter
+              </a>
+            </p>
+            <p>
+              <a href="https://instagram.com" class="text-white" style="text-decoration: none;">
+                <i class="fab fa-instagram-square"></i>
+                Instagram
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="mb-4">
+      <div class="row align-items-center">
+        <div class="text-center">
+          Copyright &copy; and &reg; Since 2020 Under ApniDukaan.com | Qazi Maaz Arshad
+        </div>
+      </div>
+    </div>
   </footer>
+<script src="./static/script.js"></script>
+<script src="./static/cart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- scroll to top button -->
+<button id = "btnScrollToTop">
+<i class="material-icons">arrow_upward</i>
+</button>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+const btnScrollToTop = document.querySelector("#btnScrollToTop");
+ btnScrollToTop.addEventListener("click", function () {
+    window.scrollTo(0,0); }
+);
+</script>
 
 </body>
 </html>
