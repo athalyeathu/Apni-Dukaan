@@ -3,7 +3,8 @@
   <head>
     <title>Apni Dukaan</title>
     <meta charset="utf-8">
-        <meta name="vfewport" content="width=device-width initial-scale=1 shrink-to-fit-=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" type="text/css" href="./static/style.css">
         <link rel="stylesheet" href="./static/mobile.css">
         <link rel="icon" href="./Images/favicon.ico" type="image/x-icon">
@@ -17,129 +18,133 @@
   <a class="scrollToTop" href="#"></a>
   <!-- END SCROLL TOP BUTTON -->
   <section>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background: #2980b9;">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">
-              <img src="Images\Logo\ApniDukan.png" alt="logo" class="d-inline-block align-text-top navbar-logo navbar-logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-capitalize">
-                  <ul class="navbar-nav mr-auto mb-2 mb-lg-0 text-capitalize">
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
-                      </li>
-                      <li class="nav-item text-capitalize">
-                          <a class="nav-link" href="./offers.html">Offers</a>
-                      </li>
-                      <li class="nav-item text-capitalize">
-                          <a class="nav-link" href="./contactus.html">Contact us</a>
-                      </li>
-                      <li class="nav-item text-capitalize">
-                          <a class="nav-link" href="login.html">Login</a>
-                      </li>        
-                      <li class="nav-item text-capitalize">
-                          <a class="nav-link" href="./about.html">About us</a>
-                      </li>
-                      <li class="nav-item text-capitalize">
-                          <a class="nav-link" href="faq.html">FAQ</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Category
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="./mobile.html">Mobile</a></li>
-                              <li><a class="dropdown-item" href="./books.html">Books</a></li>
-                              <li><a class="dropdown-item" href="./">TV/Appliances</a></li>
-                              <li><a class="dropdown-item" href="./furniture.html">Furniture</a></li>
-                              <li><a class="dropdown-item" href="#">Baby/Kids</a></li>
-                              <li><a class="dropdown-item" href="./stationery.html">Stationery</a></li>
-                              <li>
-                                  <hr class="dropdown-divider">
-                              </li>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background: #2980b9;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="Images/Logo/ApniDukan.png" alt="logo" class="d-inline-block align-text-top navbar-logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-                              <li><a class="dropdown-item" href="./login.html">Login/Signup</a></li>
-                          </ul>
-                      </li>
-                      <li class="nav-item text-capitalize">
-                          <a class="nav-link" href="cart.html">My Cart</a>
-                      </li>
-                  </ul>
-                  <form class="d-flex">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-dark" type="submit">Search</button>
-                  </form>
-          </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-capitalize">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./offers.html">Offers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contactus.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./faq.html">FAQ</a>
+          </li>
+
+          <!-- ✅ Proper Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./mobile.html">Mobile</a></li>
+              <li><a class="dropdown-item" href="./books.html">Books</a></li>
+              <li><a class="dropdown-item" href="./tvAndAppliances.html">TV/Appliances</a></li>
+              <li><a class="dropdown-item" href="./furniture.html">Furniture</a></li>
+              <li><a class="dropdown-item" href="#">Baby/Kids</a></li>
+              <li><a class="dropdown-item" href="./stationery.html">Stationery</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="./login.html">Login/Signup</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./cart.html">My Cart</a>
+          </li>
+        </ul>
+
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
       </div>
+    </div>
   </nav>
 </section>
+
     <marquee class="moving-header">Welcome To <i>ApniDukaan</i>.com<sup>&reg;</sup></marquee>
     <div class="header-mob"><div><img src="Images\Logo\ApniDukan.png" class="logo"></div>
     <h1 class="online">Find Your Best Deal</h1></div>
-    <nav class="menu2">
-     <ul>
-      <li><a class="other-header" href="./mobile.html">Mobile</a></li>
-      <li><a class="other-header" href="./books.html">Books</a></li>
-      <li><a class="other-header" href="./">TV/Appliances</a></li>
-      <li><a class="other-header" href="./furniture.html">Furniture</a></li>
-      <li><a class="other-header" href="#">Baby/Kids</a></li>
-      <li><a class="other-header" href="./stationery.html">Stationery</a></li>
-      <li>  <h2 class="mobile-header">Best Mobile Collection</h2></li>
-      </ul>
-    </nav>
-    <section class="deals" >
-           <div class="inner">
-      
-        <div>
-             <img src="./Images/mobil2.jpg">
-            <h3 class="mobile-name"><p>Redmi Pro</p>Redmi 8A Dual (Sea Blue, 3GB RAM, 32GB Storage)</h3>
-        
-        <h3 class="mobile-inner"> – Dual Cameras & 5,000 mAH Battery</h3>
-        <h3 class="mobile-inner">Rs 9999</h3>
-        <a href="product.html"<button class="buybutton mobile-inner">Buy</button></a>
-        
-        </div>
-        <div>
-                 <img src="./Images/mobile.jpg">
-            <h3 class="mobile-name"><p>Redmi Y2 (Gold, 4GB RAM, 64GB Storage)</p>Best Phone Available</h3>
-            <h3 class="mobile-inner">Long Battery Life</h3>
-            <h3 class="mobile-inner">Rs 10000</h3>
-            <a href="product.html"<button class="buybutton mobile-inner">Buy</button></a>
-            </div>
-            <div>
-                 <img src="./Images/mobile3.jpg">
-            <h3 class="mobile-name"><p>Mi 6 Pro (Gold, 3Gb Ram, 32Gb Storage)</p> High Definition Dual Camera </h3>
-            <h3 class="mobile-inner">Strong Body And Style</h3>
-            <h3 class="mobile-inner">Rs 4999</h3>
-           <a href="product.html"<button class="buybutton mobile-inner">Buy</button></a>
-            </div>
-               <div>
-             <img src="./Images/mobile4.jpg">
-            <h3 class="mobile-name"><p>One Plus</p> One Plus 53(Blue, 4GB RAM, 32GB Storage)</h3>
-        <h3 class="mobile-inner">Win a Lucky Draw Voucher</h3>
-        <h3 class="mobile-inner">Get Rs200 Off On Your Next Visit</h3>
-        <h3 class="mobile-inner">Hurry</h3>
-        <a href="product.html"<button class="buybutton mobile-inner">Buy</button></a>
-        </div>
-            <div>
-                 <img src="./Images/mobile5.jpg">
-                <h3 class="mobile-name"><p>Honor 7X (Blue, 4GB RAM, 32GB Storage)</p>Best Display Ever</h3>
-            <h3 class="mobile-inner">Free MI Headphones</h3>
-            <h3 class="mobile-inner">Rs 6999</h3>
-            <a href="product.html"<button class="buybutton mobile-inner">Buy</button></a>
-            </div>
-            <div>
-                 <img src="./Images/mobile6.jpg">
-            <h3 class="mobile-name"><p>Xiaomi Mi Redmi Note 5 Pro Phone (Gold, 64 GB, 4 GB RAM)</p>32 Mega Pixel Front Camera</h3>
-            <h3 class="mobile-inner">Long Lasting Battery</h3>
-            <h3 class="mobile-inner">Rs 12999</h3>
-           <a href="product.html"<button class="buybutton mobile-inner">Buy</button></a>
-            </div>
-               </div>
-        </section>
+
+<section class="deals">
+  <div class="inner">
+    <div class="mobile-card">
+      <img src="./Images/mobil2.jpg" alt="Redmi Pro">
+      <h3 class="mobile-name">Redmi 8A Dual (Sea Blue, 3GB RAM, 32GB Storage)</h3>
+      <p class="mobile-detail">Dual Cameras • 5,000 mAh Battery</p>
+      <p class="mobile-price">₹9,999</p>
+       <button class="add-to-cart">Add to Cart</button>
+      <a href="product.html"><button class="buybutton">Buy Now</button></a>
+    </div>
+
+    <div class="mobile-card">
+      <img src="./Images/mobile.jpg" alt="Redmi Y2">
+      <h3 class="mobile-name">Redmi Y2 (Gold, 4GB RAM, 64GB Storage)</h3>
+      <p class="mobile-detail">Long Battery Life</p>
+      <p class="mobile-price">₹10,000</p>
+       <button class="add-to-cart">Add to Cart</button>
+      <a href="product.html"><button class="buybutton">Buy Now</button></a>
+    </div>
+
+    <div class="mobile-card">
+      <img src="./Images/mobile3.jpg" alt="Mi 6 Pro">
+      <h3 class="mobile-name">Mi 6 Pro (Gold, 3GB RAM, 32GB Storage)</h3>
+      <p class="mobile-detail">High Definition Dual Camera</p>
+      <p class="mobile-price">₹4,999</p>
+       <button class="add-to-cart">Add to Cart</button>
+      <a href="product.html"><button class="buybutton">Buy Now</button></a>
+    </div>
+
+    <div class="mobile-card">
+      <img src="./Images/mobile4.jpg" alt="OnePlus 53">
+      <h3 class="mobile-name">OnePlus 53 (Blue, 4GB RAM, 32GB Storage)</h3>
+      <p class="mobile-detail">Lucky Draw Voucher + ₹200 Off</p>
+      <p class="mobile-price">₹11,999</p>
+       <button class="add-to-cart">Add to Cart</button>
+      <a href="product.html"><button class="buybutton">Buy Now</button></a>
+    </div>
+
+    <div class="mobile-card">
+      <img src="./Images/mobile5.jpg" alt="Honor 7X">
+      <h3 class="mobile-name">Honor 7X (Blue, 4GB RAM, 32GB Storage)</h3>
+      <p class="mobile-detail">Best Display Ever + Free MI Headphones</p>
+      <p class="mobile-price">₹6,999</p>
+       <button class="add-to-cart">Add to Cart</button>
+      <a href="product.html"><button class="buybutton">Buy Now</button></a>
+    </div>
+
+    <div class="mobile-card">
+      <img src="./Images/mobile6.jpg" alt="Redmi Note 5 Pro">
+      <h3 class="mobile-name">Xiaomi Redmi Note 5 Pro (Gold, 4GB RAM, 64GB Storage)</h3>
+      <p class="mobile-detail">32 MP Front Camera • Long Battery Life</p>
+      <p class="mobile-price">₹12,999</p>
+       <button class="add-to-cart">Add to Cart</button>
+      <a href="product.html"><button class="buybutton">Buy Now</button></a>
+    </div>
+  </div>
+</section>
+
         <footer class="bg-dark text-white pt-5 pb-4">
           <div class="container text-md-left">
             <div class="row text-md-left">
@@ -250,6 +255,72 @@ const btnScrollToTop = document.querySelector("#btnScrollToTop");
     window.scrollTo(0,0); }
 );
 </script>
+
+// --- Add to Cart Logic ---
+<!-- <script>
+document.querySelectorAll(".add-to-cart").forEach((button) => {
+  button.addEventListener("click", function () {
+    const card = this.closest(".mobile-card");
+    const name = card.querySelector(".mobile-name").textContent;
+    const price = parseInt(card.querySelector(".mobile-price").textContent.replace("₹", "").replace(",", ""));
+    const image = card.querySelector("img").src;
+
+    const product = { name, price, image, quantity: 1 };
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const existing = cart.find(item => item.name === name);
+    if (existing) {
+      existing.quantity += 1;
+    } else {
+      cart.push(product);
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(`✅ ${name} added to cart!`);
+  });
+});
+</script> -->
+
+<script>
+document.querySelectorAll(".add-to-cart").forEach((button) => {
+  button.addEventListener("click", function () {
+    const card = this.closest(".mobile-card");
+    const name = card.querySelector(".mobile-name").textContent;
+    const price = parseInt(card.querySelector(".mobile-price").textContent.replace("₹", "").replace(",", ""));
+    const image = card.querySelector("img").src;
+
+    const product = { name, price, image, quantity: 1 };
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const existing = cart.find(item => item.name === name);
+    if (existing) {
+      existing.quantity += 1;
+    } else {
+      cart.push(product);
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(`✅ ${name} added to cart!`);
+
+    // ✅ Update floating cart count
+    updateCartCount();
+
+    
+    
+  });
+});
+
+// 🔁 Update cart badge count
+function updateCartCount() {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  document.getElementById("cart-count").textContent = cart.length;
+}
+
+// Update on page load
+updateCartCount();
+</script>
+
+
+
   </body>
 </html>
-
